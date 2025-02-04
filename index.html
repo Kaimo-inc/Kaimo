@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaimo inc.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@1.6.3/dist/flowbite.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+          integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        body {
+            background-color: #1e1e1e;
+        }
+
+        .gradient-text {
+            background: linear-gradient(to right, #ffcc00, #ff6600);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .container {
+            max-width: 900px;
+        }
+
+        .back-button {
+            @apply text-yellow-400 hover:text-yellow-300 font-medium text-sm;
+        }
+
+        /* Animasyonlar */
+        @keyframes slideIn {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(0); }
+        }
+
+        .slide-in {
+            animation: slideIn 1s ease-out;
+        }
+
+        .hover-scale:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="text-white p-6">
+
+    <!-- Navbar -->
+    <nav class="border-gray-200 bg-gray-900 dark:bg-gray-900 dark:border-gray-700">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Kaimo Inc.</span>
+            </a>
+            <button data-collapse-toggle="navbar-solid-bg" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-solid-bg" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#ffffff" d="M61.1 224C45 224 32 211 32 194.9c0-1.9 .2-3.7 .6-5.6C37.9 168.3 78.8 32 256 32s218.1 136.3 223.4 157.3c.5 1.9 .6 3.7 .6 5.6c0 16.1-13 29.1-29.1 29.1L61.1 224zM144 128a16 16 0 1 0 -32 0 16 16 0 1 0 32 0zm240 16a16 16 0 1 0 0-32 16 16 0 1 0 0 32zM272 96a16 16 0 1 0 -32 0 16 16 0 1 0 32 0zM16 304c0-26.5 21.5-48 48-48l384 0c26.5 0 48 21.5 48 48s-21.5 48-48 48L64 352c-26.5 0-48-21.5-48-48zm16 96c0-8.8 7.2-16 16-16l416 0c8.8 0 16 7.2 16 16l0 16c0 35.3-28.7 64-64 64L96 480c-35.3 0-64-28.7-64-64l0-16z"/></svg>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-solid-bg">
+                <ul class="flex flex-col font-medium mt-4 rounded-lg bg-gray-800 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700">
+                    <li>
+                        <a href="#about" class="block py-2 px-3 md:p-0 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent" aria-current="page" style="color: white;">Hakkında</a>
+                    </li>
+                    <li>
+                        <a href="#projects" class="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" style="color: white;">Projeler</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" style="color: white;">İletişim</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <h1 class="text-5xl font-extrabold mt-6 gradient-text text-center slide-in">Kaimo</h1>
+
+    <div class="container mt-6">
+        <p class="text-lg leading-relaxed text-gray-300 text-center slide-in">
+            Kaimo Inc. olarak, açık kaynaklı yazılım dünyasında devrim yaratmayı hedefliyoruz. İnterneti daha güvenli, hızlı ve özgür bir hale getirmek için projeler geliştiriyoruz. 
+            Hedefimiz; kullanıcıların, sansüre uğramadan, güvenle içeriklere erişebilmelerini sağlamaktır.
+        </p>
+    </div>
+
+    <!-- Projeler Section -->
+    <h2 id="projects" class="text-3xl font-semibold mt-12 text-yellow-400 text-center slide-in">🛠️ Projelerimiz</h2>
+
+    <div class="container mt-6 text-center">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-6">
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-2xl hover-scale transition-all">
+                <img src="https://raw.githubusercontent.com/devyigit/Synapic/refs/heads/main/images/1738097647350.png" alt="Kaimo Search" class="rounded-md mb-4">
+                <h3 class="text-xl font-semibold text-yellow-400">Kaimo Search</h3>
+                <p class="mt-2 text-gray-300">
+                    Kaimo Search, kullanıcı odaklı, hızlı ve özelleştirilebilir bir arama motorudur. Mahremiyetinizi koruyarak güvenli internet deneyimi sunuyor. 
+                </p>
+
+                <!-- Butonlar -->
+                <div class="mt-4">
+                    <a href="#" class="bg-yellow-400 text-gray-800 py-2 px-4 rounded-lg hover:bg-yellow-500 hover:text-white inline-flex items-center space-x-2">
+                        <i class="fas fa-cogs"></i>
+                        <span>Yakında...</span>
+                    </a>
+                    <a href="https://github.com/Kaimo-inc" class="bg-gray-800 text-white py-2 px-4 rounded-lg hover:bg-gray-700 hover:text-white inline-flex items-center space-x-2 mt-2">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- İletişim Section -->
+    <h2 id="contact" class="text-2xl font-semibold mt-12 text-yellow-400 text-center">📬 İletişim</h2>
+    <div class="container mt-6 text-center">
+        <p class="text-lg leading-relaxed text-gray-300">
+            Bizimle iletişime geçmek için aşağıdaki formu kullanabilir veya doğrudan e-posta gönderebilirsiniz. 
+            Her türlü soru ve geri bildiriminiz bizim için çok değerli!
+        </p>
+    </div>
+
+    <footer class="mt-10 text-gray-500 text-sm text-center">
+        <p>&copy; 2025 Kaimo Inc. Tüm hakları saklıdır.</p>
+    </footer>
+
+</body>
+</html>
