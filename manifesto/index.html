@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaimo Manifestosu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@1.6.3/dist/flowbite.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        body { background-color: #1e1e1e; color: white; }
+        .gradient-text {
+            background: linear-gradient(to right, #ffcc00, #ff6600);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .fade-in {
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="p-6">
+
+    <!-- Navbar -->
+    <nav class="border-gray-200 bg-gray-900 p-4 flex justify-between items-center">
+        <a href="index.html" class="text-2xl font-semibold text-white">← Ana Sayfa</a>
+    </nav>
+
+    <!-- Başlık -->
+    <h1 class="text-5xl font-extrabold mt-10 text-center gradient-text fade-in">📜 Kaimo Manifestosu</h1>
+    
+    <!-- Alt Başlık -->
+    <p class="text-gray-300 text-center mt-4 fade-in">Özgürlük. Güvenlik. Açıklık.</p>
+
+    <!-- Manifesto Listesi -->
+    <div class="mt-10 max-w-3xl mx-auto">
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg fade-in">
+            <h2 class="text-xl font-semibold text-yellow-400"><i class="fas fa-shield-alt"></i> Gizlilik ve Güvenlik</h2>
+            <p class="text-gray-300 mt-2">Kullanıcıların verilerini koruyoruz. Verileriniz size aittir ve asla izlenmez.</p>
+        </div>
+
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg fade-in mt-6">
+            <h2 class="text-xl font-semibold text-yellow-400"><i class="fas fa-unlock"></i> Açık Kaynak</h2>
+            <p class="text-gray-300 mt-2">Kodlarımız şeffaf ve açık kaynaklıdır. Herkes katkıda bulunabilir.</p>
+        </div>
+
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg fade-in mt-6">
+            <h2 class="text-xl font-semibold text-yellow-400"><i class="fas fa-users"></i> Toplum Odaklı</h2>
+            <p class="text-gray-300 mt-2">Kaimo, kullanıcıların fikirlerini dinler ve geliştirmelerini destekler.</p>
+        </div>
+
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg fade-in mt-6">
+            <h2 class="text-xl font-semibold text-yellow-400"><i class="fas fa-globe"></i> İnternet Özgürlüğü</h2>
+            <p class="text-gray-300 mt-2">Sansüre karşıyız. Bilgiye erişim herkesin hakkıdır.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-10 text-gray-500 text-sm text-center">
+        <p>&copy; 2025 Kaimo Inc. Tüm hakları saklıdır.</p>
+    </footer>
+
+</body>
+</html>
